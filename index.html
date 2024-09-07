@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      
+      ::-webkit-scrollbar {
+        width: 8px; 
+      }
+
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: rgba(163, 163, 163, 0.5); 
+        border-radius: 10px; 
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(163, 163, 163, 0.8); 
+      }
+
+      .raised-btn {
+        background: linear-gradient(145deg, #585858, #4a4a4a);
+        box-shadow: 19px 19px 28px #252525, -19px -19px 28px #7f7f7f;
+      }
+      .arrow-btn {
+        background: linear-gradient(145deg, #5f5f5f, #707070);
+        box-shadow:  17px 17px 44px #2a2a2a,
+             -17px -17px 44px #a8a8a8
+      }
+
+    </style>
+  </head>
+  <body class="container mx-auto bg-neutral-900 flex justify-center items-center p-10 text-white flex-col">
+    <div class="flex flex-col items-center gap-7">
+      <div class="p-8 bg-neutral-600 rounded-xl shadow-xl shadow-black/40 relative">
+        <div class="absolute top-3 left-2 w-5 h-5 rounded-full flex justify-center items-center border border-white">
+          <span class="text-sm">?</span>
+        </div>
+        <div class="absolute top-[50%] left-2 flex flex-col gap-[2px]">
+          <div class="flex gap-[2px]">
+            <div class="w-1 h-1 bg-neutral-400"></div>
+            <div class="w-1 h-1 bg-neutral-400"></div>
+          </div>
+          <div class="flex gap-[2px]">
+            <div class="w-1 h-1 bg-neutral-400"></div>
+            <div class="w-1 h-1 bg-neutral-400"></div>
+          </div>
+          <div class="flex gap-[2px]">
+            <div class="w-1 h-1 bg-neutral-400"></div>
+            <div class="w-1 h-1 bg-neutral-400"></div>
+          </div>
+        </div>
+        <ul class="flex justify-evenly items-center bg-stone-900 p-2 rounded-xl gap-3">
+          <li id="about-opener" class="hover:opacity-75 cursor-pointer w-full text-center bg-neutral-700 rounded-xl py-2 px-3">About Me</li>
+          <li id="experiences-opener" class="hover:opacity-75 cursor-pointer w-full text-center bg-neutral-700 rounded-xl py-2 px-3">Experiences</li>
+          <li id="recommended-opener" class="hover:opacity-75 cursor-pointer w-full text-center bg-neutral-700 rounded-xl py-2 px-3">Recommended</li>
+        </ul>
+        <div class="mt-5 flex flex-col gap-3 max-h-[250px] overflow-y-scroll scrollbar-invisible" id="about">
+          <p class="font-thin">
+            Hello! I'm Abhishek Singh Tomar, a passionate and detail-oriented frontend web developer. With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating responsive,
+            user-friendly websites that provide seamless user experiences. Additionally, I am proficient in version control using Git, ensuring efficient collaboration and smooth project management
+          </p>
+          <p class="font-thin">
+            As a fresher, I am eager to apply my skills and continue learning in a dynamic environment. I am committed to staying updated with the latest trends in web development and excited to
+            contribute my creativity and problem-solving abilities to real-world projects.
+          </p>
+          <p class="font-thin">
+            As a fresher, I am eager to apply my skills and continue learning in a dynamic environment. I am committed to staying updated with the latest trends in web development and excited to
+            contribute my creativity and problem-solving abilities to real-world projects.
+          </p>
+          <p class="font-thin">
+            As a fresher, I am eager to apply my skills and continue learning in a dynamic environment. I am committed to staying updated with the latest trends in web development and excited to
+            contribute my creativity and problem-solving abilities to real-world projects.
+          </p>
+          <p class="font-thin">
+            As a fresher, I am eager to apply my skills and continue learning in a dynamic environment. I am committed to staying updated with the latest trends in web development and excited to
+            contribute my creativity and problem-solving abilities to real-world projects.
+          </p>
+          <p class="font-thin">
+            As a fresher, I am eager to apply my skills and continue learning in a dynamic environment. I am committed to staying updated with the latest trends in web development and excited to
+            contribute my creativity and problem-solving abilities to real-world projects.
+          </p>
+          <p class="font-thin">
+            As a fresher, I am eager to apply my skills and continue learning in a dynamic environment. I am committed to staying updated with the latest trends in web development and excited to
+            contribute my creativity and problem-solving abilities to real-world projects.
+          </p>
+        </div>
+        <div class="pt-5 flex flex-col gap-3 hidden" id="experiences">
+          <p class="font-thin">
+            I have no of experience in software development because i am fresher but I have worked on a variety of projects, including web applications, mobile apps, and APIs. I have experience with a
+            wide range of technologies, including React, Node.js, and Express. I am also familiar with databases such as MongoDB and MySQL. I am currently looking for new opportunities to grow my
+            skills and work on exciting projects.
+          </p>
+          <p class="font-thin">
+            Frontend Developer at XYZ Company, I worked on a variety of projects, including web applications, mobile apps, and APIs. I have experience with a wide range of technologies, including
+            React, Node.js, and Express. I am also familiar with databases such as MongoDB and MySQL. I am currently looking for new opportunities to grow my skills and work on exciting projects.
+          </p>
+        </div>
+        <div class="pt-5 flex flex-col gap-3 hidden" id="recommended">
+          <p class="font-thin">
+            I have been recommended by my previous employers for my hard work and dedication. I have received positive feedback for my ability to work well in a team and deliver high-quality code.
+            Elon Musk has been a great mentor to me and has recommended me for my work on the SpaceX project.
+          </p>
+          <p class="font-thin">
+            I have been recommended by my previous employers for my hard work and dedication. I have received positive feedback for my ability to work well in a team and deliver high-quality code.
+            Jeff Bezos has been a great mentor to me and has recommended me for my work on the Amazon project.
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded-xl shadow-xl shadow-black/40 w-4/5 h-2 bg-neutral-600"></div>
+
+      <div class="w-full bg-neutral-600 p-8 rounded-xl shadow-xl shadow-black/40 relative">
+        <div class="absolute top-3 left-2 w-5 h-5 rounded-full flex justify-center items-center border border-white">
+          <span class="text-sm">?</span>
+        </div>
+        <div class="absolute top-[50%] left-2 flex flex-col gap-[2px]">
+          <div class="flex gap-[2px]">
+            <div class="w-1 h-1 bg-neutral-400"></div>
+            <div class="w-1 h-1 bg-neutral-400"></div>
+          </div>
+          <div class="flex gap-[2px]">
+            <div class="w-1 h-1 bg-neutral-400"></div>
+            <div class="w-1 h-1 bg-neutral-400"></div>
+          </div>
+          <div class="flex gap-[2px]">
+            <div class="w-1 h-1 bg-neutral-400"></div>
+            <div class="w-1 h-1 bg-neutral-400"></div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center mb-4">
+          <button class="px-6 py-3 bg-stone-900 hover:opacity-75 cursor-pointer rounded-md text-white">Gallery</button>
+          <div class="flex gap-5">
+            <button class="px-6 py-3 rounded-3xl raised-btn">+ Add Image</button>
+            <div class="flex justify-between items-center space-x-4">
+              <button class="px-3 py-2 bg-neutral-700 hover:opacity-75 cursor-pointer rounded-full text-white arrow-btn">&larr;</button>
+              <button class="px-3 py-2 bg-neutral-700 hover:opacity-75 cursor-pointer rounded-full text-white arrow-btn">&rarr;</button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="rounded-lg">
+            <img src="pexels-packermann-1666021.jpg" alt="Gallery Image 1" class="w-full h-48 rounded-md" />
+          </div>
+          <div class="rounded-lg">
+            <img src="pexels-samandgos-709552.jpg" alt="Gallery Image 2" class="w-full h-48 rounded-md" />
+          </div>
+          <div class="rounded-lg">
+            <img src="pexels-senuscape-728360-1658967.jpg" alt="Gallery Image 3" class="w-full h-48 rounded-md" />
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-xl shadow-xl shadow-black/40 w-4/5 h-2 bg-neutral-600"></div>
+    </div>
+
+    <script>
+      const toggleVisibility = id => {
+        document.getElementById("about").classList.add("hidden");
+        document.getElementById("experiences").classList.add("hidden");
+        document.getElementById("recommended").classList.add("hidden");
+        document.getElementById(id).classList.remove("hidden");
+      };
+
+      const shadowManager = (e, id1, id2) => {
+        e.target.classList.add("shadow-xl");
+        e.target.classList.add("shadow-black/40");
+        document.getElementById(id1).classList.remove("shadow-xl");
+        document.getElementById(id1).classList.remove("shadow-black/40");
+        document.getElementById(id2).classList.remove("shadow-xl");
+        document.getElementById(id2).classList.remove("shadow-black/40");
+      };
+
+      window.onload = () => {
+        document.getElementById("about-opener").classList.add("shadow-xl");
+        document.getElementById("about-opener").classList.add("shadow-black/40");
+      };
+
+      document.getElementById("about-opener").addEventListener("click", e => {
+        toggleVisibility("about");
+        shadowManager(e, "experiences-opener", "recommended-opener");
+      });
+      document.getElementById("experiences-opener").addEventListener("click", e => {
+        toggleVisibility("experiences");
+        shadowManager(e, "about-opener", "recommended-opener");
+      });
+      document.getElementById("recommended-opener").addEventListener("click", e => {
+        toggleVisibility("recommended");
+        shadowManager(e, "about-opener", "experiences-opener");
+      });
+    </script>
+  </body>
+</html>
